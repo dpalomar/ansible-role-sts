@@ -1,0 +1,4 @@
+- include: install_{{ ansible_distribution }}.yml
+- debug: var=sts_home
+- debug: var=sts
+- file: src={{ sts }} dest=/usr/local/bin/STS state=link
