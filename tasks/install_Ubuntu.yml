@@ -1,5 +1,8 @@
-- get_url: url=http://dist.springsource.com/release/STS/3.8.1.RELEASE/dist/e4.6/spring-tool-suite-3.8.1.RELEASE-e4.6-linux-gtk-x86_64.tar.gz dest=/tmp/spring-tool-suite-3.8.1.RELEASE.tar.gz
-- unarchive: src=/tmp/spring-tool-suite-3.8.1.RELEASE.tar.gz dest=/opt
-- copy: src=STS.desktop dest=/usr/share/applications/STS.desktop
-- set_fact: sts_home=/opt/sts-bundle/sts-3.8.1.RELEASE
+- name: Downloading STS
+  get_url: url={{ sts_url }} dest={{ sts_download_dir }}/{{ sts_file_dist }}
+- name: Installing STS
+  unarchive: src={{ sts_download_dir }}/{{ sts_file_dist }} dest={{ sts_install_dir }}
+- name: Creating desktop icon
+  template: src=STS.j2 dest=/usr/share/applications/STS.desktop
+- set_fact: sts_home=/opt/sts-bundle/sts-{{ sts_version }}
 - set_fact: sts="{{ sts_home }}/STS"

@@ -1,0 +1,6 @@
+---
+sts_version: "3.8.1.RELEASE"
+sts_url: "http://dist.springsource.com/release/STS/{{ sts_version }}/dist/e4.6/spring-tool-suite-{{ sts_version }}-e4.6-linux-gtk-x86_64.tar.gz"
+sts_download_dir: /tmp
+sts_install_dir: /opt
+sts_file_dist: "spring-tool-suite-{{ sts_version }}.tar.gz"
