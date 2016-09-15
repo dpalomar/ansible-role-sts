@@ -8,9 +8,11 @@ It will download STS, and create the needed menu links.
 Requirements
 ------------
 
-- Java JDK 8 (can be installed with
-[mrlesmithjr.oracle-java8](https://galaxy.ansible.com/mrlesmithjr/oracle-java8/).
+- Java JDK 8+ 
 
+Dependencies
+------------
+JDK8 [mrlesmithjr.oracle-java8](https://galaxy.ansible.com/mrlesmithjr/oracle-java8/)
 
 Example Playbook
 ----------------
@@ -40,6 +42,6 @@ $ ansible-galaxy install -r requirements.yml
 License
 -------
 
-MIT
+MIT / BSD
 
 

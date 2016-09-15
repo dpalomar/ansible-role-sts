@@ -1,7 +1,8 @@
 galaxy_info:
   author: dpalomar
   description: SpringSource Tool Suite
-  license: MIT
+  company: Adama 
+  license: license (BSD, MIT)
   min_ansible_version: 2.0
   platforms:
     - name: Ubuntu
@@ -14,5 +15,5 @@ galaxy_info:
     - eclipse
     - spring
     - springframework
-dependencies: 
-    - {role: 'mrlesmithjr.oracle-java8'}
+dependencies: []
+
